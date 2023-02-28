@@ -1,0 +1,115 @@
+.hero {
+  display: flex;
+  max-width: 1366px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
+  overflow: hidden;
+
+  @media screen and (max-width: 979px) {
+    gap: 0;
+    width: 95%;
+  }
+
+  @media screen and (max-width: 521px) {
+    flex-direction: column;
+  }
+
+  &__container {
+    display: flex;
+    position: relative;
+  }
+
+  &__image {
+    max-width: 502px;
+    max-height: 804px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: -5%;
+    z-index: 1;
+  }
+
+  // Декоративный контейнер со стоимостью (верхний левый)
+  &__decoration_left-top {
+    display: flex;
+    max-width: 145px;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    top: 15%;
+    left: -10%;
+    gap: 10%;
+    z-index: 2;
+
+    @media screen and (max-width: 779px) {
+      display: none;
+    }
+  }
+
+  &__line_left-top {
+    width: 50px;
+    height: 1px;
+    background-color: #8B8371;
+    border: none;
+    margin: 0;
+  }
+
+  &__text_left-top {
+    font-family: $fontPrata;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+  }
+
+  // Декоративный контейнер с рамрером (нижний правый) 
+  &__decoration_right-bottom {
+    display: flex;
+    max-width: 195px;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    bottom: 15%;
+    right: -15%;
+    gap: 10%;
+    z-index: 2;
+
+    @media screen and (max-width: 1279px) {
+      right: none;
+      left: -15%;
+      flex-direction: row-reverse;
+    }
+
+    @media screen and (max-width: 779px) {
+      display: none;
+    }
+
+  }
+
+  &__line_right-bottom {
+    width: 50px;
+    height: 1px;
+    background-color: #8B8371;
+    border: none;
+    margin: 0;
+  }
+
+  &__text_right-bottom {
+    font-family: $fontPrata;
+    z-index: 1;
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px
+  }
+
+  &__semicircle {
+    width: 496px;
+    height: 944px;
+    background: linear-gradient(180deg, rgba(234, 227, 212, 0) 0%, #EAE3D4 100%);
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    position: absolute;
+    top: -15%;
+    left: -36%;
+    z-index: 0;
+  }
+}

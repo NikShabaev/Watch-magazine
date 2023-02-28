@@ -1,0 +1,13 @@
+.news {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: center;
+  padding: 6% 6%;
+  gap: 5%;
+
+  @media screen and(max-width: 949px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

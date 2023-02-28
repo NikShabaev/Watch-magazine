@@ -1,0 +1,41 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-start;
+  z-index: 1;
+
+  @media screen and (max-width: 521px) {
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  &__container {
+    max-width: 343px;
+  }
+
+  &__title {
+    font-family: $fontPlayfair;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 60px;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-family: $fontPlayfair;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 16px 0 0 0;
+  }
+
+  &__text {
+    font-family: $fontRoboto;
+    font-weight: 300;
+    margin: 39px 0 64px 0;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

@@ -1,0 +1,31 @@
+.quality {
+  width: 40%;
+  z-index: 2;
+
+  &__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+  }
+
+  &__description {
+    margin: 8% 0 9% 0;
+    max-width: 376px;
+    width: 100%;
+    font-family: $fontRoboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  @media screen and (max-width: 799px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    width: 80%;
+    text-align: center;
+    ;
+  }
+}

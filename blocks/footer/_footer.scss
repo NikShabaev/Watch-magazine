@@ -1,0 +1,26 @@
+.footer {
+  max-width: 1366px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #444240;
+  box-sizing: border-box;
+  padding: 79px 185px 67px;
+
+  @media screen and(max-width: 1365px) {
+    padding: 3%;
+  }
+
+  @media screen and(max-width: 767px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5%;
+    min-height: 380px;
+  }
+
+  @media screen and(max-width: 549px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

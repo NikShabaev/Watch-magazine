@@ -1,0 +1,46 @@
+.carousel {
+  max-width: 521px;
+  z-index: 2;
+
+  &__container {
+    width: 100%;
+    position: relative;
+
+    @media screen and (max-width: 799px) {
+      width: 320px;
+      ;
+    }
+  }
+
+  .slick-prev {
+    border: none;
+    position: absolute;
+    bottom: -8%;
+    right: 15%;
+    background-color: #F7F5EF;
+
+    @media screen and (max-width: 799px) {
+      right: 48%;
+    }
+  }
+
+  .slick-next {
+    border: none;
+    position: absolute;
+    bottom: -8%;
+    right: 10%;
+    background-color: #F7F5EF;
+
+    @media screen and (max-width: 799px) {
+      right: 44%;
+    }
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}

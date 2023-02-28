@@ -1,0 +1,39 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__image {
+    width: 19px;
+    height: 19px;
+
+    @media screen and(max-width: 799px) {
+      width: 25px;
+      height: 25px;
+    }
+
+    &_white {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &__title {
+    font-family: $fontPlayfair;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.14em;
+
+    @media screen and(max-width: 799px) {
+      font-size: 18px;
+    }
+
+    &_white {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 0.14em;
+      color: #FFFFFF;
+    }
+  }
+}
